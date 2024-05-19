@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Schizo:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Schizo_jar</output-path>
+    <root id="archive" name="Schizo.jar">
+      <element id="module-output" name="Schizo" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/plugin.yml" />
+    </root>
+  </artifact>
+</component>

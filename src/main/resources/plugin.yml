@@ -1,0 +1,8 @@
+name: SchizoSMP
+version: '${project.version}'
+main: org.nixfrost.schizo.SchizoSMP
+api-version: '1.20'
+commands:
+  schizo:
+    permission: schizo.cmd
+    aliases: sch
