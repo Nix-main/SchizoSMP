@@ -97,7 +97,7 @@ public class SchizoPower implements Listener {
 
                     // Spawns the actual zombie in the last part and attaches the new owner metadata.
                     Zombie zombie = (Zombie) player.getWorld().spawnEntity(loc, EntityType.ZOMBIE);
-                    zombie.setMetadata("owner", new FixedMetadataValue(Bukkit.getPluginManager().getPlugin("PowerPlugin"), player));
+                    zombie.setMetadata("owner", new FixedMetadataValue(Util.getInstance(), player));
                 }
             }
         }
