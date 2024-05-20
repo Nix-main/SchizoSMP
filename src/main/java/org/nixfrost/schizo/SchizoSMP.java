@@ -3,6 +3,7 @@ package org.nixfrost.schizo;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.nixfrost.schizo.commands.maincmd;
+import org.nixfrost.schizo.listeners.SchizoPower;
 import org.nixfrost.schizo.util.Util;
 
 import static org.nixfrost.schizo.util.Util.version;
@@ -19,6 +20,7 @@ public final class SchizoSMP extends JavaPlugin {
             Bukkit.getPluginManager().disablePlugin(this);
         }
         getCommand("schizo").setExecutor(new maincmd());
+        Bukkit.getPluginManager().registerEvents(new SchizoPower(), this);
         saveDefaultConfig();
         Util.log("&aSuccessfully enabled v%s &7in&b %.2f seconds", version, (float) (System.currentTimeMillis() - start) / 1000);
     }
